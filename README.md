@@ -17,3 +17,5 @@ Future planned features.
 
 * Taking pictures and saving in Mongo DB
 * Voice recognition and control
+
+
