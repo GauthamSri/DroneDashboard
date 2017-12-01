@@ -1,0 +1,89 @@
+<div class="container" style="padding-top:5em;">
+  <div class="row" style="text-align:center">
+      <div class="panel panel-default">
+          <div class="panel-heading"><h2><span class="label label-info">Live video streaming from Drone</span></h2></div>
+        <div class="panel-body">
+            <div class="col-sm-12" id="ref"  #ref ></div>
+        </div>
+      </div>
+ </div>
+
+ <div class="row">
+   
+ </div>
+
+  <div class="row">
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Battery %</h3>
+            </div>
+            <div class="panel-body">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="battery" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                  {{battery}}%
+                  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+
+
+ <div class="row">
+     
+
+          <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Manual Commands</h3>
+              </div>
+              <div class="panel-body">
+                            <div class="row">
+                              <div class="col-lg-4">
+                                <div class="form-group col-sm-12">
+                                  <button id="takeoff" type="button" class="btn btn-primary" (click)="takeoff()">Take Off</button>
+                                  <button id="land" type="button" class="btn btn-primary" (click)="land()">Land</button>
+                                  <button id="stop" type="button" class="btn btn-primary" (click)="stop()">Stop</button>
+                                </div><!-- /input-group -->
+                              </div><!-- /.col-lg-4 -->
+                              <div class="col-lg-8">
+                                <div class="form-group col-sm-12">
+                                      <button id="front" type="button" class="btn btn-primary" (click)="front()">Front</button>
+                                      <button id="back" type="button" class="btn btn-primary" (click)="back()">Back</button>
+                                      <button id="left" type="button" class="btn btn-primary" (click)="left()">Left</button>
+                                      <button id="right" type="button" class="btn btn-primary" (click)="right()">Right</button>
+                                      <button id="up" type="button" class="btn btn-primary" (click)="up()">Up</button>
+                                      <button id="down" type="button" class="btn btn-primary" (click)="down()">Down</button>
+                                      <button id="clockwise" type="button" class="btn btn-primary" (click)="clockwise()">Clockwise</button>
+                                      <button id="counterClockwise" type="button" class="btn btn-primary" (click)="counterClockwise()">Counter Clockwise</button>
+                    
+                                </div><!-- /input-group -->
+                              </div><!-- /.col-lg-8 -->
+                     </div><!-- /.row -->
+                  <div class="form-group col-sm-12">
+                    
+
+                  </div>
+              </div>
+          </div>
+    </div>
+
+    <div class="row">
+      
+        <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Automated Flight Path</h3>
+            </div>
+            <div class="panel-body">
+              <div class="form-group col-sm-12">
+              <button id="runmission" type="button" class="btn btn-primary" (click)="runmission()">Run Mission</button>
+              </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
